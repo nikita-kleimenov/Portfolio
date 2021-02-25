@@ -236,6 +236,8 @@ img{
     right: 0;
     bottom: 0;
     width: 295px;
+    border: 2px solid var(--first-color);
+    border-radius: 50%;
 }
 
 .button{
@@ -422,4 +424,122 @@ img{
     font-size: 1.5rem;
     color: #fff;
     margin: 0 var(--mb-2);
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        margin: 0;
+    }
+    .section{
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    .section-title{
+        margin-bottom: var(--mb-6);
+    }
+    .section-title::after{
+        width: 80px;
+        top: 3rem;
+    }
+
+    .nav{
+        height:var(--header-height);
+    }
+
+    .nav__list{
+        display: flex;
+        padding-top: 0%;
+    }
+    .nav__item{
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
+    }
+
+    .nav__toggle{
+        display: none;
+    }
+    .nav__link{
+        color: var(--second-coloe);
+    }
+
+    .home{
+        height: 100hv;
+    }
+
+    .home__data{
+        align-items: flex-end;
+    }
+
+    .home__social{
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .home__social-icon{
+        margin-bottom: 0;
+        margin-right: var(--mb-4);
+    }
+
+    .home__img{
+        width: 457px;
+        bottom: 15%;
+    }
+    .home__title{
+        font-size: 50px;
+        margin-top: 100px;
+    }
+
+    .about__container, .skills__container{
+        grid-template-columns: repeat(2,fr);
+        align-items: center;
+        display: flex;
+        text-align: initial;
+    }
+
+    .about__img img{
+        width: 300px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .about__subtitle{
+        margin-left: 100px;
+        text-align: center;
+    }
+    .about__text{
+        margin-left: 100px;
+    }
+
+    .skills__img{
+        width: 800px;
+        margin-left: 150px;
+    }
+
+    .personal-qualities__container{
+        width: 80%;
+       margin: 0 auto;
+    }
+    .personal-qualities__data{
+        height: 70px;
+    }
+
+    .contact__form{
+        width: 360px;
+    }
+    .contact__form{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .bg-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__img{
+        right: 10%;
+    }
 }
