@@ -235,7 +235,7 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 275px;
+    width: 295px;
     border: 2px solid var(--first-color);
     border-radius: 50%;
 }
@@ -247,6 +247,7 @@ img{
     padding: 0.75rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: 0.5rem;
+    display: none;
 }
 
 .button:hover{
@@ -488,7 +489,7 @@ img{
         bottom: 15%;
     }
     .home__title{
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 100px;
     }
 
